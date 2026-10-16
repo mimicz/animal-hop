@@ -133,3 +133,9 @@ button.board-label:disabled{cursor:default;pointer-events:none;color:#fff;opacit
 #level-error{font-size:14px;color:#aa362c}
 .level-actions{display:flex;justify-content:flex-end;align-items:center;gap:14px}
 .level-actions .primary{min-width:100px}
+
+/* Hidden continue entry: a faint clover only those who know will tap. */
+.continue-run{position:absolute;right:12px;bottom:10px;z-index:26;border:0;background:transparent;padding:6px;font-size:20px;line-height:1;opacity:.22;transition:opacity .2s;touch-action:manipulation}
+.continue-run:hover{opacity:.5}
+.continue-run:focus-visible{opacity:.8;outline:3px solid #ee9e36;outline-offset:2px;border-radius:8px}
+@media(max-width:650px){.continue-run{right:8px;bottom:6px;font-size:18px;padding:5px}}
